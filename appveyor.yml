@@ -4,6 +4,6 @@ install:
 - sh: sudo ufw deny OpenSSH
 
 test_script:
-- sh: curl -sflL -O- 'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-ssh.sh' | bash -e -
+- sh: curl -sflL 'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-ssh.sh' | bash -e -
 
 build: off
